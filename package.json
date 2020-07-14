@@ -1,0 +1,17 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "Electron Note Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "makneta",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.1.0",
+    "marked": "^1.1.0"
+  }
+}
