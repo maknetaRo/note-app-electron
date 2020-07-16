@@ -12,7 +12,7 @@ const getFileFromUser = exports.getFileFromUser = () => {
     }).then(result => {
         const file = result.filePaths[0];
         const content = fs.readFileSync(file).toString();
-        console.log(content)
+        mainWindow.webContents.send('file-opened', file, content);
     }).catch(err => {
         console.log(err)
     });
@@ -30,6 +30,7 @@ const createMainWindow = () => {
         show: false,
         webPreferences: {
             nodeIntegration: true,
+            enableRemoteModule: true
         }
     })
 

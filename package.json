@@ -11,7 +11,18 @@
   "author": "makneta",
   "license": "ISC",
   "dependencies": {
+    "marked": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maknetaRo/note-app-electron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maknetaRo/note-app-electron/issues"
+  },
+  "homepage": "https://github.com/maknetaRo/note-app-electron#readme",
+  "devDependencies": {
     "electron": "^9.1.0",
-    "marked": "^1.1.0"
+    "electron-builder": "^22.7.0"
   }
 }
